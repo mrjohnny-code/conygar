@@ -1,0 +1,18 @@
+.portfolio-inner {
+	.top-intro {
+		padding: 60px 0;
+
+		&:after {
+			height: 100%;
+		}
+		.block {
+			justify-content: flex-start;
+
+			.underline {
+				&:after {
+					max-width: 180px;
+				}
+			}
+		}
+	}
+}

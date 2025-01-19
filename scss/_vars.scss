@@ -1,0 +1,78 @@
+// vars
+$images: '../images/';
+$fonts: '../fonts/';
+$fa-font-path: $fonts;
+
+$questa: 'questa', serif;
+$haas-grotesk: 'neue-haas-grotesk-display', sans-serif;
+
+// $btn-font-family: $haas-grotesk;
+
+
+$breakpoints: (
+	phone: 375px,
+	phablet: 575px,
+	tablet: 768px,
+	desktop: 992px,
+	minscroll: 1025px,
+	mddesktop: 1200px
+);
+
+// bootstrap vars
+$grid-breakpoints: (
+	xs: 0,
+	sm: 375px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	xxl: 1440px,
+	xxxl: 1600px,
+	xxxxl: 1800px
+);
+
+$container-max-widths: (
+	md: 720px,
+	lg: 980px,
+	xl: 1140px
+);
+
+// grid
+$grid-gutter-width: 30px;
+
+// colors
+$white: #ffffff;
+$black: #000000;
+$dark_gray: #4f4f4f;
+$medium_gray: #767676;
+$gray: #bdbdbd;
+$gray_line: #b4b4b4;
+$light_blue: #e6ebfc;
+$blue: #9ebed7;
+$dark_blue: #437194;
+$coral: #fa6c6c;
+
+// settings
+$body-bg: $white;
+$body-color: $black;
+$font-size-base: 1.125rem;
+$line-height-base: 1.5;
+$font-family-base: $haas-grotesk;
+$font-weight-base: 400;
+
+// headings
+$h1-font-size:                $font-size-base * 2.6666666667;
+$h2-font-size:                $font-size-base * 2;
+$h3-font-size:                $font-size-base * 1.5555555556;
+$h4-font-size:                $font-size-base * 1.4;
+$h5-font-size:                $font-size-base * 1.25;
+$h6-font-size:                $font-size-base;
+
+$headings-font-family:        $questa;
+$headings-font-weight:        400;
+$headings-color:              inherit;
+
+
+// dev2
+$gray-01: #b1b1b1;
+$gray-02: #f4f4f4;
+$gray-03: #5e5e5e;

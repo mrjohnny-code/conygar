@@ -1,0 +1,68 @@
+body {
+	margin: 0;
+	min-width: 300px;
+	font-family: $font-family-base;
+	font-size: $font-size-base;
+	line-height: $line-height-base;
+	color: $body-color;
+	font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	-webkit-appearance: none;
+	cursor: pointer;
+	transition: color 0.3s, background 0.3s;
+}
+a {
+	transition: color 0.3s, background 0.3s;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.wrapper {
+	position: relative;
+	overflow: hidden;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.underline {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+
+	&:after {
+		content: '';
+		width: 100%;
+		height: 2px;
+
+		background-color: $dark_blue;
+
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		z-index: 1;
+	}
+}
+
+// dev2
+p {
+	letter-spacing: 0.03em;
+}
+main {
+	flex: 1 0 auto;
+}

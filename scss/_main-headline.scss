@@ -1,0 +1,55 @@
+/* .main-headline */
+.main-headline {
+	position: relative;
+	padding: 176px 0 30px;
+	margin-bottom: 116px;
+	background-color: $light_blue;
+
+	@include media-breakpoint-down(lg) {
+		margin-bottom: 97px;
+	}
+
+	@include media-breakpoint-down(md) {
+		padding: 125px 0 35px;
+		margin-bottom: 15px;
+	}
+
+	@include media-breakpoint-down(sm) {
+		padding: 100px 0 15px;
+	}
+
+	h1 {
+		padding-bottom: 0.3125em;
+		margin: 0 0 0.375em;
+	}
+
+	p {
+		margin: 0;
+		+ p {
+			margin-top: 1.5em;
+		}
+	}
+
+	.image {
+		width: 100%;
+		margin: 0;
+
+		@include media-breakpoint-up(xl) {
+			margin: 3px 0 -131px;
+		}
+
+		@include media-breakpoint-down(lg) {
+			margin: 0 0 -112px;
+		}
+
+		@include media-breakpoint-down(md) {
+			margin-bottom: 0;
+		}
+
+		img {
+			width: 100%;
+			height: auto;
+			vertical-align: top;
+		}
+	}
+}

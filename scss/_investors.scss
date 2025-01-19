@@ -1,0 +1,12 @@
+.investors-page {
+	.top-intro {
+		&:after {
+			@include media('<desktop') {
+				height: 490px;
+			}
+			@include media('<phablet') {
+				height: 520px;
+			}
+		}
+	}
+}

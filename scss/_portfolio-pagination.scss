@@ -1,0 +1,60 @@
+.portfolio-page {
+	.main-headline {
+		margin-bottom: 200px;
+	}
+}
+.pagination {
+	margin-top: 65px;
+	margin-bottom: 50px;
+
+	justify-content: center;
+
+	ul {
+		display: flex;
+		align-items: center;
+
+		li {
+			margin: 0 12px;
+
+			a {
+				color: rgba($black, .4);
+				font-size: 20px;
+				font-weight: 500;
+
+				&:hover {
+					color: $dark_blue;	
+				}
+
+				&.active {
+					color: $dark_blue;
+				}
+			}
+			.left {
+				display: block;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 9px 10px 9px 0;
+				border-color: 
+					transparent 
+					$dark_blue 
+					transparent 
+					transparent;
+				cursor: pointer;
+			}
+			.right {
+				display: block;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 9px 0 9px 10px;
+				border-color: 
+					transparent 
+					transparent 
+					transparent
+					$dark_blue;
+				cursor: pointer;
+			}
+		}
+	}
+}

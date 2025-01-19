@@ -1,0 +1,27 @@
+/* about-us */
+.text-block {
+	padding: 1.125rem 0;
+
+	.underline {
+		padding-bottom: 0.5em;
+		margin-bottom: 0.6111111111em;
+
+		&::after {
+			width: 5.0555555556em;
+		}
+	}
+
+	p {
+		letter-spacing: 0;
+		margin-bottom: 1.5em;
+	}
+}
+
+.text-two-cols {
+	columns: 2 $grid-gutter-width;
+
+	p {
+		margin-bottom: 0;
+		padding-bottom: 0.5em;
+	}
+}

@@ -1,0 +1,44 @@
+@import "_vars";
+// @import "_fonts";
+@import "bootstrap/_bootstrap";
+@import "fontawesome/_fontawesome";
+@import "fontawesome/_brands";
+@import "fontawesome/_solid";
+@import "fontawesome/_regular";
+@import "_include-media";
+@import "_slick";
+@import "_reset";
+
+@import "_buttons";
+@import "_header";
+@import "_footer";
+
+//intro
+@import "_home-intro";
+@import "_home-portfolio";
+@import "_home-news";
+
+//portfolio
+@import "_portfolio-pagination";
+
+//portfolio-inner
+@import "_portfolio-inner";
+@import "_portfolio-inner-slider";
+@import "_portfolio-inner-sum";
+
+// investors
+@import "_investors";
+@import "_investors-share";
+@import "_investors-corporate";
+
+// financials
+@import "_financials-table";
+
+// news
+@import "_news";
+
+
+// dev2
+@import "_main-headline";
+@import "_contact-block";
+@import "_about-us";

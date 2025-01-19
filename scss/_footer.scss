@@ -1,0 +1,141 @@
+#footer {
+	padding-top: 75px;
+
+	background-color: $light_blue;
+	border-top: 1px solid $gray;
+
+	.item {
+		font-size: 18px;
+		line-height: 150%;
+
+		@include media('<tablet') {
+			margin-bottom: 50px;
+
+			text-align: center;
+		}
+
+		.footer-logo {
+			width: 203px;
+			height: auto;
+
+			@include media('<tablet') {
+				width: 103px;
+			}
+		}
+		h2 {
+			display: inline-block;
+
+			margin-bottom: 50px;
+
+			@include media('<tablet') {
+				margin-bottom: 30px;
+			}
+
+			&:after {
+				background-color: $blue;
+				left: 50%;
+				bottom: -10px;
+
+				transform: translateX(-50%);
+			}
+		}
+		ul {
+
+			li {
+				margin-bottom: 20px;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+
+				a {
+					font-weight: 500;
+					color: $dark_gray;
+					text-decoration: none;
+
+					&:hover {
+						color: $black;
+					}
+				}
+			}
+		}
+		p {
+			a {
+				display: inline-block;
+				margin-top: 25px;
+
+				color: $black;
+				font-size: 18px;
+				font-weight: 500;
+				text-decoration: none;
+
+				&:hover {
+					color: $dark_gray;
+				}
+			}
+		}
+	}
+	.bottom {
+		margin-top: 150px;
+		padding: 30px 0;
+
+		background-color: rgba($white, .5);
+
+		@include media('<tablet') {
+			margin-top: 25px;
+		}
+
+		.col-12 {
+			display: flex;
+			align-items: center;
+
+			@include media('<tablet') {
+				flex-direction: column;
+			}
+		}
+
+		ul {
+			display: flex;
+			justify-content: center;
+
+			@include media('<tablet') {
+				flex-direction: column;
+				align-items: center;
+			}
+
+
+			li {
+				margin-right: 15px;
+				font-size: 15px;
+				font-weight: 500;
+
+				@include media('<tablet') {
+					margin-right: 0;
+					margin-bottom: 20px;
+				}
+
+				&:last-child {
+					margin-right: 0;
+				}
+
+				a {
+					color: $black;
+					text-decoration: none;
+
+					&:hover {
+						color: $dark_gray;
+					}
+				}
+			}
+		}
+		.right {
+			margin-left: auto;
+			font-size: 15px;
+			font-weight: 500;
+
+			@include media('<tablet') {
+				margin-left: 0;
+			}
+		}
+	}
+}// /#footer

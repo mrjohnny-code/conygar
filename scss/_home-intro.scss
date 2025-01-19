@@ -1,0 +1,174 @@
+.intro {
+	margin-top: 91px;
+
+	font-size: 18px;
+	line-height: 150%;
+
+	@include media('<tablet') {
+		margin-bottom: 60px;
+	}
+
+	.block {
+		max-width: 1645px;
+		margin-left: auto;
+		padding-right: 0;
+		display: flex;
+		align-items: center;
+
+		@include media('<tablet') {
+			flex-direction: column;
+			padding-left: 0;
+		}
+
+		.text {
+			max-width: 445px;
+
+			@include media('<mddesktop') {
+				padding: 15px 0;
+			}
+			@include media('<tablet') {
+				max-width: 350px;
+				margin-top: 40px;
+				padding: 0;
+			}
+			@include media('<phablet') {
+				padding: 0 15px;
+			}
+
+			h1 {
+				margin-bottom: 55px;
+
+				@include media('<desktop') {
+					font-size: 38px;
+				}
+
+				&:after {
+					max-width: 255px;
+					bottom: -25px;
+				}
+			}
+			p {
+				max-width: 350px;
+				margin-bottom: 20px;
+			}
+			.button {
+				margin-top: 20px;
+			}
+		}
+		.image {
+			width: 1130px;
+			height: 860px;
+
+			margin-left: 70px;
+
+			background-image: url('../images/img-intro.jpg');
+			background-repeat: no-repeat;
+			background-size: auto;
+			background-position: 0 0;
+
+			position: relative;
+
+			@include media('<desktop') {
+				margin-left: 30px;
+			}
+			@include media('<tablet') {
+				margin-top: 40px;
+				margin-left: 0;
+				width: 100%;
+			}
+
+			img {
+				max-width: 100%;
+				height: auto;
+			}
+			.content {
+				width: 100%;
+
+				display: flex;
+
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				z-index: 1;
+
+				@include media('<phablet') {
+					flex-direction: column;
+				}
+
+				h4 {
+					margin-top: 20px;
+					font-size: 20px;
+					font-weight: 300;
+					line-height: 150%;
+					letter-spacing: .07em;
+					text-transform: uppercase;
+
+					@include media('<desktop') {
+						font-size: 18px;
+					}
+				}
+				p,
+				span {
+					font-size: 36px;
+					font-weight: 300;
+					line-height: 180%;
+					text-transform: uppercase;
+					letter-spacing: .07em;
+
+					@include media('<desktop') {
+						font-size: 26px;
+					}
+				}
+				.left {
+					width: 50%;
+					
+					text-align: center;
+					background-color: $light_blue;
+
+					@include media('<phablet') {
+						width: 100%;
+						padding-bottom: 20px;
+					}
+
+					p {
+						margin-top: 25px;
+					}
+
+					span {
+						font-size: 18px;
+						color: $coral;
+					}
+				}
+				.right {
+					width: 50%;
+					
+					text-align: center;
+					background-color: $dark_blue;
+
+					@include media('<phablet') {
+						width: 100%;
+					}
+
+					h4 {
+						color: $white;
+					}
+					p {
+						color: $white;
+						font-weight: 400;
+					}
+					span {
+						display: block;
+						margin-bottom: 25px;
+
+						color: $white;
+						font-size: 20px;
+
+						@include media('<desktop') {
+							font-size: 18px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

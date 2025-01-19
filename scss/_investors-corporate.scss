@@ -1,0 +1,60 @@
+.investors-corporate {
+	padding: 145px 0;
+
+	color: $white;
+	background-color: $dark_blue;
+
+	@include media('<tablet') {
+		padding: 70px 0;
+	}
+
+	h2 {
+		margin-bottom: 50px;
+
+		&:after {
+			max-width: 180px;
+
+			background-color: $white;
+
+			bottom: -20px;
+		}
+	}
+	p {
+		margin: 20px 0;
+	}
+	.accordion {
+
+		.item {
+			padding: 20px 0;
+			border-bottom: 1px solid rgba($white, .5);
+
+			&.active {
+				.content {
+					display: block;
+				}
+				.arrow {
+					transform: rotate(180deg);
+				}
+			}
+			.tab {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				cursor: pointer;
+
+				h4 {
+					max-width: 405px;
+					font-size: 18px;
+					font-weight: 600;
+				}
+				.arrow img {
+					max-width: 100%;
+					height: auto;
+				}
+			}
+			.content {
+				display: none;
+			}
+		}
+	}
+}
